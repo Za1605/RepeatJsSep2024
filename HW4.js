@@ -1,11 +1,12 @@
 
-//- створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
-//- створити функцію яка повертає найменьше число з масиву
+
 //- створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
 //- створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відовідних індексах
 //Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
 //- Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 //Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
+
+
 
 //- створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
 function fooPl(a,b) {
@@ -19,6 +20,8 @@ function SumSide(r) {
     return Math.PI * r *r;
 }
 console.log(SumSide(5));
+
+
 
 
 //- створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
@@ -108,3 +111,39 @@ const list3 = createArray([678, 'How are you', false]);
 document.write(list2,list3);
 
 
+//- створити функцію яка приймає масив об'єктів з наступними полями id,name,age ,
+// та виводить їх в документ. Для кожного об'єкту окремий блок.
+function arrProd(array) {
+     let div = '<div>';
+
+     for (let i = 0; i < array.length; i++) {
+         div += `<p>${array[i]}</p>`;
+     }
+    div += '</div>';
+
+   return div;
+}
+
+const hello = arrProd([1, 'yuliia', 22]);
+const hello2 = arrProd([33, 'HOHOHI', 24]);
+document.write(hello, hello2);
+
+
+//- створити функцію яка повертає найменьше число з масиву
+
+function maxNum(arr) {
+     let min = 0;
+     let max = 0;
+
+     for (let i = 0; i < arr.length; i++) {
+         if (arr[i]<min){
+             min= arr[i];
+         }
+         else if (arr[i]>max){
+             max= arr[i];
+         }
+     }
+     return max;
+}
+ let result = maxNum([12, 10, 5, 765]);
+console.log(result);
