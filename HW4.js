@@ -1,8 +1,5 @@
 
 
-//- створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
-//- створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відовідних індексах
-//Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
 //- Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 //Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
 
@@ -147,3 +144,41 @@ function maxNum(arr) {
 }
  let result = maxNum([12, 10, 5, 765]);
 console.log(result);
+
+
+//- створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та
+// повертає його.
+// Приклад sum([1,2,10]) //->13
+function sumNum(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum;
+}
+
+console.log(sumNum([12, 10, 5, 7]));
+
+
+
+
+//- створити функцію swap(arr,index1,index2).
+// Функція міняє місцями значення у відповідних індексах
+//Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
+
+function chanDir(arr, index1, index2) {
+  let temp = arr[index1];
+  arr[index1] = arr[index2];
+  arr[index2] = temp;
+  return arr;
+}
+
+
+    console.log(chanDir([11,44,99,77],1,2));
+
+
+
+
+//- Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
+//Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
+
