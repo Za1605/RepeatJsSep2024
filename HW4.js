@@ -180,5 +180,30 @@ function chanDir(arr, index1, index2) {
 
 
 //- Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
-//Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
+//Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 25
+function exchange(sumUAH,currencyValues,exchangeCurrency) {
+    for (const sumUAHElement of currencyValues) {
+        if (sumUAHElement.currency === exchangeCurrency) {
+            return sumUAH / sumUAHElement.value;
+        }
+    }
 
+    }
+
+
+const list1 = exchange(1000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD');
+console.log(list1);
+
+
+//let keys = [
+//    {currency:'USD',value:40},
+//    {currency:'EUR',value:42},
+//    {currency:'ZL',value:42}
+//];
+//
+//for (const moneyElement of money) {
+//    if (moneyElement.currency == exchange.currency) {
+//        console.log()
+//
+//    }
+//}
