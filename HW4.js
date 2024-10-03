@@ -207,3 +207,38 @@ console.log(list1);
 //
 //    }
 //}
+
+//визначити чи число додатне
+
+function plusNum(num) {
+    if (num>0) {
+        return true;
+
+    }else {
+        return false;
+    }
+
+}
+console.log(plusNum(0));
+
+//to create the function which get string with name of the day in
+//English or Ukraine and return number of the day (it will be for 1 to 3)
+
+function week(day) {
+    switch (day) {
+         case "Monday":
+         case "Понеділок":
+               return 1;
+         case "Tuesday":
+         case "Вівторок":
+               return 2;
+         case "Wednesday":
+         case "Середа":
+            return 3;
+
+          default:return 0;
+    }
+
+}
+
+console.log(week("Monday"));
