@@ -80,14 +80,14 @@ console.log(lowCase.toLowerCase());
 
 //- Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
 
-//function print(n) {
-//    console.log(n);
-//    if (n > 0) {
-//        print(n - 1);
-//    }
-//
-//}
-//print(5);
+function print(n) {
+    console.log(n);
+    if (n > 0) {
+        print(n - 1);
+    }
+
+}
+print(5);
 
 let string111 = ' dirty string   ';
 let clStr = string111.replaceAll(' ', ' ');
