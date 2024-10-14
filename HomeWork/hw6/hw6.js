@@ -1,12 +1,5 @@
 
 
-
-//
-//- Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
-//    let str = 'Ревуть воли як ясла повні';
-//let arr = stringToarray(str); ['Ревуть', 'воли', 'як', 'ясла', 'повні']
-//
-//- є масив чисел [10,8,-7,55,987,-1011,0,1050,0] . за допомоги map  перетворити всі об'єкти в масиві на стрінгові.
 //- створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
 //    let nums = [11,21,3];
 //sortNums(nums,'ascending') // [3,11,21]
@@ -98,9 +91,36 @@ console.log(clStr);
 //let arr = stringToarray(str); ['Ревуть', 'воли', 'як', 'ясла', 'повні']
 
 function stringToarray(str) {
-    return.str.split('');
+    return str.split('');
 }
 
 let strttttt = 'Ревуть воли як ясла повні';
 let arr11 = stringToarray(strttttt);
 console.log(arr11);
+
+//- є масив чисел [10,8,-7,55,987,-1011,0,1050,0] .
+// за допомоги map  перетворити всі об'єкти в масиві на стрінгові.
+
+
+const arrBig = [10,8,-7,55,987,-1011,0,1050,0];
+
+const toString = arrBig.map(key => String(key));
+
+console.log(toString);
+
+//- створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого,
+//
+// або навпаки в залежності від значення аргументу direction.
+//    let nums = [11,21,3];
+//sortNums(nums,'ascending') // [3,11,21]
+//sortNums(nums,'descending') // [21,11,3]
+//
+//==========================
+
+
+let nums = [11,21,3];
+function sortNum(direction) {
+    return direction.a - direction.b
+}
+
+console.log(sortNum(nums,'ascending'));
