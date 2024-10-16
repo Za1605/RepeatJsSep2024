@@ -140,5 +140,11 @@ let coursesAndDurationArray = [
 
 console.log(coursesAndDurationArray.sort((a,b) => a.monthDuration - b.monthDuration));
 
+const result = coursesAndDurationArray.filter(month => month.monthDuration > 5);
+console.log(result);
+
+let changeArr = coursesAndDurationArray.map((coursesAndDurationArray,index)=>
+({title: coursesAndDurationArray.title, monthDuration: coursesAndDurationArray.monthDuration, id:index +1}));
+console.log(changeArr);
 
 
