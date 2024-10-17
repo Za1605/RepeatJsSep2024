@@ -1,33 +1,5 @@
 
 
-//=========================
-//    описати колоду карт (від 6 до туза без джокерів)
-//- знайти піковий туз
-//- всі шістки
-//- всі червоні карти
-//- всі буби
-//- всі трефи від 9 та більше
-//
-//{
-//    cardSuit: '', // 'spade', 'diamond','heart', 'clubs'
-//        value: '', // '6'-'10', 'ace','jack','queen','king','joker'
-//    color:'', // 'red','black'
-//}
-//
-//=========================
-//
-//    Взяти описану колоду карт, та за допомоги reduce упакувати всі карти по "мастях" в об'єкт
-//{
-//    spades:[],
-//        diamonds:[],
-//    hearts:[],
-//    clubs:[]
-//}
-//=========================
-//    взяти з arrays.js (який лежить в папці 2023 plan) масив coursesArray
-//--написати пошук всіх об'єктів, в який в modules є sass
-//--написати пошук всіх об'єктів, в який в modules є docker
-
 
 //- Знайти та вивести довижину настипних стрінгових значень
 //'hello world', 'lorem ipsum', 'javascript is cool'
@@ -148,3 +120,44 @@ let changeArr = coursesAndDurationArray.map((coursesAndDurationArray,index)=>
 console.log(changeArr);
 
 
+//=========================
+//    описати колоду карт (від 6 до туза без джокерів)
+//- знайти піковий туз
+//- всі шістки
+//- всі червоні карти
+//- всі буби
+//- всі трефи від 9 та більше
+//
+//{
+//    cardSuit: '', // 'spade', 'diamond','heart', 'clubs'
+//        value: '', // '6'-'10', 'ace','jack','queen','king','joker'
+//    color:'', // 'red','black'
+//}
+//
+//=========================
+//
+//    Взяти описану колоду карт, та за допомоги reduce упакувати всі карти по "мастях" в об'єкт
+//{
+//    spades:[],
+//        diamonds:[],
+//    hearts:[],
+//    clubs:[]
+//}
+//=========================
+//    взяти з arrays.js (який лежить в папці 2023 plan) масив coursesArray
+//--написати пошук всіх об'єктів, в який в modules є sass
+//--написати пошук всіх об'єктів, в який в modules є docker
+
+let users = [
+    {name: 'vasya', age: 31, status: false},
+    {name: 'petya', age: 30, status: true},
+    {name: 'kolya', age: 29, status: true},
+    {name: 'olya', age: 28, status: false},
+    {name: 'max', age: 30, status: true},
+    {name: 'anya', age: 31, status: false},
+    {name: 'oleg', age: 28, status: false},
+    {name: 'andrey', age: 29, status: true},
+    {name: 'masha', age: 30, status: true},
+    {name: 'olya', age: 31, status: false},
+    {name: 'max', age: 31, status: true}
+];
