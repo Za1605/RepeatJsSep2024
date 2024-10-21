@@ -148,7 +148,7 @@ console.log(changeArr);
 //--написати пошук всіх об'єктів, в який в modules є sass
 //--написати пошук всіх об'єктів, в який в modules є docker
 
-let users = [
+let userses = [
     {name: 'vasya', age: 31, status: false},
     {name: 'petya', age: 30, status: true},
     {name: 'kolya', age: 29, status: true},
@@ -161,3 +161,7 @@ let users = [
     {name: 'olya', age: 31, status: false},
     {name: 'max', age: 31, status: true}
 ];
+
+const findAge = userses.filter(user => user.age < 29 || user.status===true);
+console.log(findAge);
+
